@@ -1,6 +1,6 @@
 # CelebA GAN Project
 This repository contains a Generative Adversarial Network (GAN) and diffusion models implementation designed to generate facial images based on the CelebA dataset, conditioned on attribute labels. The project leverages PyTorch for building and training the GAN, with a focus on generating 256x256 images.
-Overview
+
 ## The project includes:
 
 Data Preparation: A custom CelebAHQDataset class to load and preprocess images and attributes from the CelebA dataset.
