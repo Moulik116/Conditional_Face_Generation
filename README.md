@@ -1,5 +1,5 @@
 # CelebA GAN Project
-This repository contains a Generative Adversarial Network (GAN) and diffusion model implementation designed to generate facial images based on the CelebA dataset, conditioned on attribute labels. The project leverages PyTorch for building and training the GAN, with a focus on generating 256x256 images.
+This repository contains a Generative Adversarial Network (GAN) and diffusion models implementation designed to generate facial images based on the CelebA dataset, conditioned on attribute labels. The project leverages PyTorch for building and training the GAN, with a focus on generating 256x256 images.
 Overview
 ## The project includes:
 
@@ -32,24 +32,24 @@ Download the CelebA dataset (images) and attribute file (list_attr_celeba.csv) f
 
 ## Installation
 
-## Clone the repository:
+Clone the repository:
 git clone <repository-url>
 cd <repository-directory>
 
 
-## Create a virtual environment and install dependencies:
+Create a virtual environment and install dependencies:
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install torch torchvision pandas numpy pillow tqdm matplotlib openpyxl
 
 
-## Verify CUDA setup (if using GPU):
+Verify CUDA setup (if using GPU):
 import torch
 print(torch.cuda.is_available())  # Should print True
 
 
 
-## Usage
+##  Usage
 Running the Training
 Execute the main script to start training:
 python train_gan_stabilized.py
@@ -60,7 +60,7 @@ Epochs: Configured for 300 epochs.
 Checkpoints: Saved every 10 epochs in the gan_checkpoints directory.
 Samples: Generated samples are saved in gan_checkpoints/samples every 10 epochs.
 
-Monitoring
+## Monitoring
 
 Training progress is displayed using tqdm, showing epoch and iteration details.
 Loss values (Generator and Discriminator) are printed per epoch.
